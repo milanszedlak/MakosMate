@@ -1,0 +1,304 @@
+
+html{
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+
+img{
+    border-radius: 25px;
+}
+.custom-carousel{
+   
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.nav-bar{
+    border-bottom: 1px solid #ccc;
+    
+}
+h2{
+    text-align: center;
+    margin: 0;
+}
+
+.pricing-section{
+  padding-top: 50px;
+    
+   
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+}
+.card img{
+   border-radius: 25px;
+}
+
+h5,p{
+    text-align: center;
+}
+
+.pricing-flex, .contact-flex{
+     justify-content: center;
+}
+
+.about-me-section{
+    padding-bottom: 50px;
+}
+
+.carousel-thumbnails {
+    --slide-aspect-ratio: 3 / 2;
+}
+.thumbnails {
+    display: flex;
+    justify-content: center;
+}
+
+.thumbnails__scroller {
+    display: flex;
+    gap: var(--sl-spacing-small);
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    scroll-padding: var(--sl-spacing-small);
+}
+.thumbnails__scroller::-webkit-scrollbar {
+    display: none;
+}
+
+.thumbnails__image {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+
+    opacity: 0.3;
+    will-change: opacity;
+    transition: 250ms opacity;
+
+    cursor: pointer;
+    border-radius: 35px;
+}
+
+.thumbnails__image.active {
+    opacity: 1;
+}
+.card-container {
+   
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1030px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.card {
+    
+    /* Two cards in a row with 20px gap in between */
+
+    border-radius: 25px;
+                    
+}
+.contact-section{
+    padding-top: 50px;
+    
+}
+.nav-item{
+   
+}
+
+
+
+
+/* small devices (phones, 350px and up) */
+@media (max-width: 575px) {
+    .card-container {
+        flex-direction: column;
+        gap: 100px;
+        padding-left: 20px;
+       padding-right: 20px;
+               
+    }
+    #flexbox-container-about-me{
+        padding-top: 2px!important;
+        padding-bottom: 2px!important;
+    }
+
+    .card{
+       
+      
+       margin: 0 auto;
+      margin-bottom: 60px;
+    }
+    .card-title{
+        font-size: 1.2rem;
+    }
+    .card-text{
+        font-size: 0.9rem;
+        font-weight:300;
+    }
+    .pricing-section{
+        
+    }
+    .nav-item a{
+        font-size: 1rem;
+    }
+
+    .combine-image img{
+        margin: 0 auto;
+    }
+    #about-me-flexbox{
+        justify-content: center;
+    }
+    #about-me-text{
+    
+    }
+    #about-me-text p {
+        font-size: .9rem;
+    }
+    #about-me-text h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .image-gallery-heading h2, .pricing-heading h2, .contact-section h2{
+        font-size: 2.4rem;
+    }
+    .about-me-section{
+       
+    }
+          
+    #carousel-thumb{
+        
+        margin: 0 auto;
+       
+    }
+    .card-body{
+        text-align: center;
+    }
+    #carousel-item
+    {
+        
+    }
+    label{
+        font-size: .9rem;
+        font-weight: 300;
+    }
+    .form-control{
+       
+        font-size: .9rem;
+        border: 2px solid black;
+    }
+    .form-control input{
+        font-size: 0.9rem;
+    }
+    #submit-button{
+        font-size: .9rem;
+        align-self: center;
+    }
+    
+
+   
+
+           
+}
+
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 576px) {
+    
+    .nav-item a{
+        font-size: 2rem;
+    }
+    
+
+    #about-me-flexbox{
+       justify-content: center;
+       
+       
+    }
+    #about-me-text h1{
+        font-size: 5.5rem;
+        text-align: center;
+    }
+    #about-me-text p{
+        font-size: 2.0rem;
+    }
+    
+    #flexbox-container-about-me{
+        min-width: 100%;
+    }
+    .combine-image img{
+        margin: 0 auto;
+    }
+    .nav-item a{
+        font-size: 2.5rem
+        ;
+    }
+    .card{
+        min-width: 450px!important;
+        max-width: 450px;
+        align-self: center;
+    }
+    .card-title{
+        font-size: 2.7rem;
+    }
+    .card-text{
+        font-size: 1.5rem;
+        font-weight:300;
+    }
+    .card-body{
+        text-align: center;
+    }
+    .pricing-section{
+        height: 810px;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+   .image-gallery-heading h2, .pricing-heading h2, .contact-section h2{
+        font-size: 3.4rem;
+    }
+    label{
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    .form-control{
+        min-height: 60px;
+        font-size: 1rem;
+        border: 2px solid black;
+    }
+    #submit-button{
+        font-size: 1.5rem;
+        align-self: center;
+    }
+    .mb-3{
+        text-align: center;
+    }
+
+            
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* Add your specific styles for laptop size screens here */
+  
+  /* For example, you can adjust font sizes or paddings to fit the larger screen */
+  body {
+    font-size: 16px;
+  }
+  
+  .container {
+    max-width: 960px;
+  }
+  
+  /* You can add more styles as needed to optimize the layout for laptops */
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta meta name="viewport" content="width=device-width, initial-scale=1 ">
+    <title>Mákos Máté</title>
+
+    <!-- custom css stylesheet -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Style sheet from shoe lace -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.5.2/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.5.2/cdn/shoelace-autoloader.js">
+    </script>
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+</head>
+
+
+
+
+
+<body>
+    <header>
+
+        <!-- Navigation bar html -->
+        <div class="nav-bar">
+            <div class="d-flex justify-content-center py-3">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#about-me" class="nav-link">Kezdőlap</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link">Képek</a></li>
+                    <li class="nav-item"><a href="#pricing" class="nav-link">Árak</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Kapcsolat</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="about-me-section" id="about-me">
+            <div class="container col-xxl-8 px-4 py-5" style="border-bottom: 1px solid #ccc;"
+                id="flexbox-container-about-me">
+                <div class="row flex-lg-row align-items-center g-5 py-5" id="about-me-flexbox">
+                    <div class="col-lg-6" id="about-me-text">
+                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Mákos Máté </h1>
+                        <p class="lead">Üdvözöllek! Szedlák (Mákos) Máté vagyok, a gödöllői egyetem agrármérnöki szakán
+                            végzős hallgató.
+                            Saját gazdaságunkban Dányban dolgozom, és &quot;mák őstermelőnek&quot; is büszkén nevezhetem
+                            magam.
+                            Nagyapám gazdaságában töltött gyerekkori idők inspiráltak arra, hogy felnőttként is a
+                            mezőgazdaságban tevékenykedjek. Gazdálkodásunk alapja az értékek és hagyományok.
+                            Célom más fiatalokat is inspirálni és bevezetni őket az agrárszektor kihívásaiba és
+                            lehetőségeibe.
+                        </p>
+
+                    </div>
+                    <div class="col-10 col-sm-10 col-lg-6">
+                        <div class="combine-image">
+                            <img src="assets/combine.JPG" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                                width="700" height="500" loading="lazy">
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-6" id="about-me-text">
+
+                        <p class="lead">Hiszem, hogy a mezőgazdaságban rejlő potenciál óriási, és az új generációknak
+                            lehetőségük
+                            van
+                            pozitív hatást gyakorolni a környezetre és az emberek életére.
+                            A weboldalamon bemutatom a mák termelés lépéseit és megosztom a gazdálkodás
+                            élményeit és
+                            kihívásait, hogy betekintést nyerhess a mindennapi tevékenységeimbe. Ha bármi
+                            kérdésed van
+                            ne
+                            habozz, örömmel válaszolok minden érdeklődőnek.</p>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Navigation bar html -->
+    </header>
+
+    <!-- Image gallery Section -->
+    <div class="image-gallery-section" id="gallery">
+
+        <div class="image-gallery-heading">
+            <h2 class="display-6 text-body-emphasis lh-1 mb-3">Képek</h2>
+        </div>
+        <div class="custom-carousel">
+            <sl-carousel class="carousel-thumbnails" navigation loop id="carousel-thumb">
+                <sl-carousel-item id="carousel-item">
+                    <img alt="The sun shines on the mountains and trees (by Adam Kool on Unsplash)"
+                        src="assets/c1.JPG" />
+                </sl-carousel-item>
+                <sl-carousel-item id="carousel-item">
+                    <img alt=" A waterfall in the middle of a forest (by Thomas Kelly on Unsplash)"
+                        src="assets/c2.JPG" />
+                </sl-carousel-item>
+                <sl-carousel-item id="carousel-item">
+                    <img alt=" The sun is setting over a lavender field (by Leonard Cotte on Unsplash)"
+                        src="assets/c3.JPG" />
+                </sl-carousel-item>
+            </sl-carousel>
+            <div class="thumbnails">
+                <div class="thumbnails__scroller">
+                    <img alt="Thumbnail by 1" class="thumbnails__image active" src="assets/c1.JPG" />
+                    <img alt="Thumbnail by 2" class="thumbnails__image" src="assets/c2.JPG" />
+                    <img alt="Thumbnail by 3" class="thumbnails__image" src="assets/c3.JPG" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Image gallery Section -->
+
+    <!-- Pricing section -->
+    <div class="pricing-section" id="pricing">
+        <div class="pricing-heading">
+            <h2 class="display-6 text-body-emphasis lh-1 mb-3">Árak</h2>
+        </div>
+
+        <div class="pricing-flex">
+            <div class="card-container">
+                <div class="card" style="border-radius: 25px;">
+                    <img src="assets/combine.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="border-radius: 25px;">
+                    <img src="assets/combine.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk of the card's
+                            content.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- Pricing section -->
+    <script src="js/index.js">
+    </script>
+
+
+
+
+    <!-- Contact section -->
+
+    <div class="contact-section" id="contact">
+
+        <div class="contact-heading">
+            <h2 class="display-6 text-body-emphasis lh-1 mb-3">Kapcsolat</h2>
+        </div>
+
+
+        <div class="contact-flex">
+            <div class="card-container">
+
+                <div class="card" style="border-radius: 25px;">
+
+                    <img src=" assets/combine.JPG" class="card-img-top" alt="Contact Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Elérhetőségek</h5>
+                        <p class="card-text">Név: Szedlák Máté</p>
+                        <p class="card-text">Email: mate.szedlak1@gmail.com</p>
+                        <p class="card-text">Telefon: +36 30 839 0688</p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="card" style="border-radius: 25px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Üzenet küldés</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Név</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email cím</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Üzenet</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="submit-button">Küldés</button>
+                        </form>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Footer section -->
+
+        <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="#about-me" class="nav-link px-2 text-body-secondary">Kezdőlap</a>
+                    </li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link px-2 text-body-secondary">Képek</a>
+                    </li>
+                    <li class="nav-item"><a href="#pricing" class="nav-link px-2 text-body-secondary">Árak</a>
+                    </li>
+                    <li class="nav-item"><a href="#contact" class="nav-link px-2 text-body-secondary">Kapcsolat</a>
+                    </li>
+                </ul>
+                <p class="text-center text-body-secondary">© 2023 M M Szedlak</p>
+            </footer>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
