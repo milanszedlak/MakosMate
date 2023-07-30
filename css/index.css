@@ -133,7 +133,7 @@ h5,p{
 
     .card{
        
-      
+      max-width: 277px;
        margin: 0 auto;
       margin-bottom: 60px;
     }
@@ -216,6 +216,7 @@ h5,p{
     
     .nav-item a{
         font-size: 2rem;
+        /* this for the nav bar */
     }
     
 
@@ -238,13 +239,15 @@ h5,p{
     .combine-image img{
         margin: 0 auto;
     }
-    .nav-item a{
-        font-size: 2.5rem
-        ;
+    .card-container{
+        flex-direction: column;
+        gap: 100px;
+        padding-left: 20px;
+       padding-right: 20px;
     }
+    
     .card{
-        min-width: 450px!important;
-        max-width: 450px;
+        
         align-self: center;
     }
     .card-title{
@@ -258,7 +261,7 @@ h5,p{
         text-align: center;
     }
     .pricing-section{
-        height: 810px;
+       
     }
     p{
         font-size: 1.5rem;
