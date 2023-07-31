@@ -180,6 +180,10 @@ h5,p{
     .about-me-section{
        
     }
+    .thumbnails__image{
+        width: 39px;
+        height: 39px;
+    }
           
     #carousel-thumb{
         
@@ -209,8 +213,17 @@ h5,p{
         font-size: .9rem;
         align-self: center;
     }
-    
+    .pricing-heading h3{
+        font-size: 1.5rem;
+        font-weight:200;
+        text-align: center;
+    }
 
+    .purchase{
+        font-size: 1.5rem;
+        font-weight: 200;
+        text-align: center;
+    }
    
 
            
@@ -288,6 +301,16 @@ h5,p{
     .mb-3{
         text-align: center;
     }
+    .pricing-heading h3{
+        font-size: 2.3rem;
+        font-weight:200;
+        text-align: center;
+    }
+    .purchase{
+        font-size: 2.3rem;
+        font-weight: 200;
+        text-align: center;
+    }
 
             
 
@@ -310,6 +333,7 @@ h5,p{
   #carousel-thumb{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    
   }
   .card-container{
     display: flex;
@@ -327,6 +351,15 @@ h5,p{
 
   .image-gallery-heading h2, .pricing-heading h2, .contact-section h2{
         font-size: 2.4rem;
+    }
+    .pricing-heading h3{
+        font-size: 1.5rem;
+        font-weight:200;
+    }
+    .purchase{
+        font-size: 1.5rem;
+        font-weight: 200;
+        text-align: center;
     }
     .card{
         max-width: 350px;
@@ -351,6 +384,10 @@ h5,p{
 
     .form-control{
         min-height: 30px;
+    }
+    #carousel-thumb{
+        max-width: 1030px;
+        margin: 0 auto;
     }
 
 
