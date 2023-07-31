@@ -8,7 +8,9 @@ body{
     width: 100%;
     height: 100%;
 }
-
+.col-10{
+    width: 100%;
+}
 
 img{
     border-radius: 25px;
@@ -16,7 +18,7 @@ img{
 .custom-carousel{
    
     margin: 0 auto;
-    border-bottom: 1px solid #ccc;
+    
     padding-bottom: 50px;
     padding-top: 20px;
 }
@@ -29,7 +31,9 @@ h2{
     text-align: center;
     margin: 0;
 }
-
+.image-gallery-section{
+    border-bottom: 1px solid #ccc;
+}
 .pricing-section{
   padding-top: 50px;
     
@@ -122,19 +126,22 @@ h5,p{
     .card-container {
         flex-direction: column;
         gap: 100px;
-        padding-left: 20px;
-       padding-right: 20px;
+        padding-left: 50px;
+       padding-right: 50px;
                
     }
     #flexbox-container-about-me{
         padding-top: 2px!important;
         padding-bottom: 2px!important;
     }
+    #card-conatainer-bs{
+    margin: 0 auto;
+   }
 
     .card{
        
-      max-width: 277px;
-       margin: 0 auto;
+      
+      margin: 0 auto;
       margin-bottom: 60px;
     }
     .card-title{
@@ -215,10 +222,11 @@ h5,p{
 @media (min-width: 576px) {
     
     .nav-item a{
-        font-size: 2rem;
-        /* this for the nav bar */
+        font-size: 1.5rem;
     }
-    
+    #card-conatainer-bs{
+    margin: 0 auto;
+   }
 
     #about-me-flexbox{
        justify-content: center;
@@ -226,12 +234,10 @@ h5,p{
        
     }
     #about-me-text h1{
-        font-size: 5.5rem;
+        font-size: 4.5rem;
         text-align: center;
     }
-    #about-me-text p{
-        font-size: 2.0rem;
-    }
+    
     
     #flexbox-container-about-me{
         min-width: 100%;
@@ -239,15 +245,9 @@ h5,p{
     .combine-image img{
         margin: 0 auto;
     }
-    .card-container{
-        flex-direction: column;
-        gap: 100px;
-        padding-left: 20px;
-       padding-right: 20px;
-    }
     
     .card{
-        
+        margin-bottom: 50px;
         align-self: center;
     }
     .card-title{
@@ -260,14 +260,17 @@ h5,p{
     .card-body{
         text-align: center;
     }
-    .pricing-section{
-       
+    .card-container{
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: -webkit-center;
     }
+    
     p{
         font-size: 1.5rem;
     }
    .image-gallery-heading h2, .pricing-heading h2, .contact-section h2{
-        font-size: 3.4rem;
+        font-size: 3.2rem;
     }
     label{
         font-size: 1.5rem;
@@ -291,7 +294,7 @@ h5,p{
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px)  {
   /* Add your specific styles for laptop size screens here */
   
   /* For example, you can adjust font sizes or paddings to fit the larger screen */
@@ -299,9 +302,57 @@ h5,p{
     font-size: 16px;
   }
   
-  .container {
-    max-width: 960px;
-  }
   
+  #about-me-flexbox{
+    flex-direction: column!important;
+  }
+
+  #carousel-thumb{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0px;
+    
+  }
+
+  #card-conatainer-bs{
+    margin-right: 20px;
+    margin-left: 20px;
+    max-width: 350px;
+  }
+
+  .image-gallery-heading h2, .pricing-heading h2, .contact-section h2{
+        font-size: 2.4rem;
+    }
+    .card{
+        max-width: 350px;
+    
+    }
+    .card-title{
+        font-size: 1.5rem;
+    }
+    .card-text{
+        font-size: 1rem;
+    }
+    label{
+        font-size: 1rem;
+    }
+    #submit-button{
+        font-size: 1rem;
+    }
+
+    #about-me-text{
+        min-width: 1030px;
+    }
+
+    .form-control{
+        min-height: 30px;
+    }
+
+
   /* You can add more styles as needed to optimize the layout for laptops */
 }
