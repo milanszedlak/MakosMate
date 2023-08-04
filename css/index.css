@@ -12,9 +12,55 @@ body{
     width: 100%;
 }
 
+/* Instagram section base */
+
+.instagram-section svg{
+    width: 32px;
+    height: 32px;
+}
+.instagram-section a{
+    text-decoration: none;
+}
+.instagram-section a:hover{
+    background-color: #ccc;
+}
+.instagram-section{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+/* About me section base */
+#about-me-text p{
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+.about-me-section{
+    padding-bottom: 50px;
+}
+
+
 img{
     border-radius: 25px;
 }
+
+#flexbox-container{
+    border-bottom: 1px solid #ccc;
+}
+#gallery{
+    border-bottom: 1px solid #ccc;
+    padding-top: 40px;
+}
+.image-gallery-heading{
+    text-align: center;
+    
+}
+#back-to-top{
+    text-align: center;
+}
+
 .custom-carousel{
    
     margin: 0 auto;
@@ -22,6 +68,7 @@ img{
     padding-bottom: 50px;
     padding-top: 20px;
 }
+
 
 .nav-bar{
     border-bottom: 1px solid #ccc;
@@ -53,9 +100,7 @@ h5,p{
      justify-content: center;
 }
 
-.about-me-section{
-    padding-bottom: 50px;
-}
+
 
 .carousel-thumbnails {
     --slide-aspect-ratio: 3 / 2;
@@ -107,19 +152,23 @@ h5,p{
     
     /* Two cards in a row with 20px gap in between */
 
-    border-radius: 25px;
+    border-radius: 25px!important;
+    border: none;
                     
 }
 .contact-section{
     padding-top: 50px;
     
 }
-.nav-item{
-   
+
+
+
+
+@media (max-width: 385px){
+    .nav-item a{
+        font-size: 0.7rem!important;
+    }
 }
-
-
-
 
 /* small devices (phones, 350px and up) */
 @media (max-width: 575px) {
@@ -130,14 +179,20 @@ h5,p{
        padding-right: 50px;
                
     }
+    .thumbnails{
+        display: none;
+    }
     #flexbox-container-about-me{
         padding-top: 2px!important;
         padding-bottom: 2px!important;
     }
     #card-conatainer-bs{
     margin: 0 auto;
-   }
-
+    }
+    #mate-image{
+        margin: 0;
+    }
+   
     .card{
        
       
@@ -155,7 +210,7 @@ h5,p{
         
     }
     .nav-item a{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .combine-image img{
@@ -169,16 +224,22 @@ h5,p{
     }
     #about-me-text p {
         font-size: .9rem;
-    }
-    #about-me-text h1{
-        font-size: 2.5rem;
         text-align: center;
     }
-    .image-gallery-heading h2, .pricing-heading h2, .contact-section h2{
-        font-size: 2.4rem;
+    #about-me h1{
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 20px;
     }
-    .about-me-section{
-       
+    #about-me{
+        padding-bottom: 40px;
+    }
+   
+    
+    
+    .thumbnails__image{
+        width: 39px;
+        height: 39px;
     }
     .thumbnails__image{
         width: 39px;
@@ -193,10 +254,7 @@ h5,p{
     .card-body{
         text-align: center;
     }
-    #carousel-item
-    {
-        
-    }
+    
     label{
         font-size: .9rem;
         font-weight: 300;
@@ -214,7 +272,9 @@ h5,p{
         align-self: center;
     }
     .pricing-heading h3{
+
         font-size: 1.5rem;
+
         font-weight:200;
         text-align: center;
     }
@@ -234,8 +294,9 @@ h5,p{
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 576px) {
     
+    
     .nav-item a{
-        font-size: 1.5rem;
+        font-size: 1.2rem!important;
     }
     #card-conatainer-bs{
     margin: 0 auto;
@@ -246,9 +307,11 @@ h5,p{
        
        
     }
-    #about-me-text h1{
-        font-size: 4.5rem;
+    #about-me h1{
+     
+        font-size: 2.5rem;
         text-align: center;
+        padding-top: 40px!important;
     }
     
     
@@ -257,6 +320,10 @@ h5,p{
     }
     .combine-image img{
         margin: 0 auto;
+       
+    }
+    .col-sm-2{
+       width: 50%!important;
     }
     
     .card{
@@ -280,11 +347,11 @@ h5,p{
     }
     
     p{
-        font-size: 1.5rem;
+        font-size: 1rem!important;
+        text-align: center!important;
+       
     }
-   .image-gallery-heading h2, .pricing-heading h2, .contact-section h2{
-        font-size: 3.2rem;
-    }
+   
     label{
         font-size: 1.5rem;
         font-weight: 300;
@@ -302,7 +369,7 @@ h5,p{
         text-align: center;
     }
     .pricing-heading h3{
-        font-size: 2.3rem;
+
         font-weight:200;
         text-align: center;
     }
@@ -319,15 +386,33 @@ h5,p{
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px)  {
   /* Add your specific styles for laptop size screens here */
+
+  .instagram-section a{
+    font-size: 1.5rem;
+    font-weight: 200;
+    
+  }
+
+
+  
+
+  .col-sm-2{
+       width: 25%!important;
+    }
+
+  header{
+    min-height: -webkit-fill-available;
+  }
   
   /* For example, you can adjust font sizes or paddings to fit the larger screen */
   body {
     font-size: 16px;
   }
   
-  
+
+
   #about-me-flexbox{
-    flex-direction: column!important;
+    justify-content: center;
   }
 
   #carousel-thumb{
@@ -341,6 +426,9 @@ h5,p{
     flex-wrap: nowrap;
     gap: 0px;
     
+  }
+  .card-body{
+    min-height: 10rem;
   }
 
   #card-conatainer-bs{
@@ -379,7 +467,11 @@ h5,p{
     }
 
     #about-me-text{
-        min-width: 1030px;
+       
+    }
+    h1{
+     padding-top: 30px;
+     font-size: 4rem!important;
     }
 
     .form-control{
@@ -389,6 +481,12 @@ h5,p{
         max-width: 1030px;
         margin: 0 auto;
     }
+
+    #about-me{
+        padding-bottom: 40px;
+        padding-top: 60px;
+    }
+
 
 
   /* You can add more styles as needed to optimize the layout for laptops */
