@@ -241,6 +241,10 @@ h5,p{
         width: 39px;
         height: 39px;
     }
+    .thumbnails__image{
+        width: 39px;
+        height: 39px;
+    }
           
     #carousel-thumb{
         
@@ -268,7 +272,9 @@ h5,p{
         align-self: center;
     }
     .pricing-heading h3{
-        font-size: 1.2rem;
+
+        font-size: 1.5rem;
+
         font-weight:200;
         text-align: center;
     }
@@ -363,7 +369,7 @@ h5,p{
         text-align: center;
     }
     .pricing-heading h3{
-        
+
         font-weight:200;
         text-align: center;
     }
@@ -475,6 +481,7 @@ h5,p{
         max-width: 1030px;
         margin: 0 auto;
     }
+
     #about-me{
         padding-bottom: 40px;
         padding-top: 60px;
